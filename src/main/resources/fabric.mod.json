@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pixelpirates",
+	"version": "${version}",
+	"name": "Pixel Pirates",
+	"description": "Pixel Pirates, sail the 5 seas!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pixelpirates/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.get900.pixelpirates.PixelPirates"
+		],
+		"fabric-datagen": [
+			"net.get900.pixelpirates.PixelPiratesDataGenerator"
+		],
+		"client": [
+			"net.get900.pixelpirates.PixelPiratesClient"
+		]
+	},
+	"mixins": [
+		"pixelpirates.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
