@@ -2,6 +2,8 @@ package net.get900.pixelpirates;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.get900.pixelpirates.item.ModItemGroups;
+import net.get900.pixelpirates.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,9 @@ public class PixelPirates implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
 
+		LOGGER.info("Pixel Pirates is initializing...");
 	}
 }

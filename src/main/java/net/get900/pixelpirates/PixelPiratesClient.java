@@ -7,4 +7,5 @@ public class PixelPiratesClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
+        PixelPirates.LOGGER.info("Pixel Pirates client initializing...");
 }}

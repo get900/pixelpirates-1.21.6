@@ -1,0 +1,30 @@
+{
+  "item.pixelpirates.coin": "Coin",
+  "item.pixelpirates.pirate_coin": "Pirate Coin",
+  "item.pixelpirates.cutlass": "Cutlass",
+  "item.pixelpirates.dagger": "Dagger",
+  "item.pixelpirates.dynamite": "Dynamite",
+  "item.pixelpirates.cannon_ball": "Cannon Ball",
+  "item.pixelpirates.ship_item": "Ship",
+  "item.pixelpirates.raft_item": "Raft",
+  "item.pixelpirates.pirate_hat": "Pirate Hat",
+  "item.pixelpirates.grog": "Grog",
+  "item.pixelpirates.rope": "Rope",
+  "item.pixelpirates.raw_shark_meat": "Raw Shark Meat",
+  "item.pixelpirates.kraken_ink": "Kraken Ink",
+  "item.pixelpirates.cannon": "Cannon",
+  "item.pixelpirates.sail": "Ship Sail",
+  "item.pixelpirates.mast_with_sails": "Mast with sails",
+  "item.pixelpirates.mast": "Mast",
+  "item.pixelpirates.cooked_shark_meat": "Cooked Shark Meat",
+  "item.pixelpirates.driftwood": "Driftwood",
+
+  "block.pixelpirates.gunpowder_barrel": "Gunpowder Barrel",
+  "block.pixelpirates.grog_barrel": "Barrel o' Grog",
+  "block.pixelpirates.driftwood_block": "Driftwood Block",
+
+  "itemgroup.pixelpirates.pixelpirates": "Pixel Pirates",
+  "itemgroup.pixelpirates.pixelpirates_food": "Pixel Pirates Food",
+  "itemgroup.pixelpirates.pixelpirates_blocks": "Pixel Pirates Blocks",
+  "itemgroup.pixelpirates.pixelpirates_gear": "Pixel Pirates Gear"
+}
