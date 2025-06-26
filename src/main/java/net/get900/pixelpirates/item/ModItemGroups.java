@@ -2,6 +2,7 @@ package net.get900.pixelpirates.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.get900.pixelpirates.PixelPirates;
+import net.get900.pixelpirates.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -32,30 +33,33 @@ public class ModItemGroups {
                         entries.add(ModItems.MAST_WITH_SAILS);
                         entries.add(ModItems.MAST);
                         entries.add(ModItems.DRIFTWOOD);
+                        entries.add(ModItems.TATTERED_CLOTH);
 
                     }).build());
 
-   // public static final ItemGroup PIXELPIRATES_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-        //    Identifier.of(PixelPirates.MOD_ID,"pixelpirates_blocks"),
-        //    FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DRIFTWOOD_BLOCK))
-         //           .displayName(Text.translatable("itemgroup.pixelpirates.pixelpirates_blocks"))
-         //           .entries((displayContext, entries) -> {
+    public static final ItemGroup PIXELPIRATES_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(PixelPirates.MOD_ID,"pixelpirates_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DRIFTWOOD_BLOCK))
+                    .displayName(Text.translatable("itemgroup.pixelpirates.pixelpirates_blocks"))
+                    .entries((displayContext, entries) -> {
 
-           //             entries.add(ModBlocks.GUNPOWDER_BARREL);
-           //             entries.add(ModBlocks.GROG_BARREL);
-            //            entries.add(ModBlocks.DRIFTWOOD_BLOCK);
+                        entries.add(ModBlocks.GROG_BARREL);
+                        entries.add(ModBlocks.DRIFTWOOD_BLOCK);
+                        entries.add(ModBlocks.WATER_LIGHT_BLOCK);
 
-            //        }).build());
+                    }).build());
 
     public static final ItemGroup PIXELPIRATES_FOOD_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(PixelPirates.MOD_ID,"pixelpirates_food"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RAW_SHARK_MEAT))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GROG))
                     .displayName(Text.translatable("itemgroup.pixelpirates.pixelpirates_food"))
                     .entries((displayContext, entries) -> {
 
-                     //   entries.add(ModItems.GROG);
+                        entries.add(ModItems.GROG);
                         entries.add(ModItems.RAW_SHARK_MEAT);
                         entries.add(ModItems.COOKED_SHARK_MEAT);
+                        entries.add(ModItems.RAW_SALTED_SWIMMER);
+                        entries.add(ModItems.COOKED_SALTED_SWIMMER);
 
                     }).build());
 
@@ -68,6 +72,13 @@ public class ModItemGroups {
                         entries.add(ModItems.CUTLASS);
                         entries.add(ModItems.DAGGER);
                         entries.add(ModItems.DYNAMITE);
+                        entries.add(ModItems.RUSTED_CUTLASS);
+                        entries.add(ModItems.BOARDING_AXE);
+                        entries.add(ModItems.BROKEN_SHOVEL);
+                        entries.add(ModItems.PIRATE_HELMET);
+                        entries.add(ModItems.PIRATE_CHESTPLATE);
+                        entries.add(ModItems.PIRATE_LEGGINGS);
+                        entries.add(ModItems.PIRATE_BOOTS);
 
                     }).build());
 

@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft:incorrect_for_stone_tool"
+  ],
+  "remove": [
+    "#pixelpirates:needs_pirate_tool"
+  ]
+}

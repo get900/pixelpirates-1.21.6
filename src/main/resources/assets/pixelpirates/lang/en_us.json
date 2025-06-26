@@ -18,13 +18,30 @@
   "item.pixelpirates.mast": "Mast",
   "item.pixelpirates.cooked_shark_meat": "Cooked Shark Meat",
   "item.pixelpirates.driftwood": "Driftwood",
+  "item.pixelpirates.rusted_cutlass": "Rusted Cutlass",
+  "item.pixelpirates.boarding_axe": "Boarding Axe",
+  "item.pixelpirates.cooked_salted_swimmer": "Cooked Salted Swimmer",
+  "item.pixelpirates.raw_salted_swimmer": "Raw Salted Swimmer",
+  "item.pixelpirates.broken_shovel": "Broken Shovel",
+  "item.pixelpirates.tattered_cloth": "Tattered Cloth",
+
+  "item.pixelpirates.pirate_helmet": "Pirate Hat",
+  "item.pixelpirates.pirate_chestplate": "Pirate Coat",
+  "item.pixelpirates.pirate_leggings": "Pirate Pants",
+  "item.pixelpirates.pirate_boots": "Pirate Booties",
 
   "block.pixelpirates.gunpowder_barrel": "Gunpowder Barrel",
   "block.pixelpirates.grog_barrel": "Barrel o' Grog",
   "block.pixelpirates.driftwood_block": "Driftwood Block",
+  "block.pixelpirates.water_light_block": "Water Light",
 
   "itemgroup.pixelpirates.pixelpirates": "Pixel Pirates",
   "itemgroup.pixelpirates.pixelpirates_food": "Pixel Pirates Food",
   "itemgroup.pixelpirates.pixelpirates_blocks": "Pixel Pirates Blocks",
-  "itemgroup.pixelpirates.pixelpirates_gear": "Pixel Pirates Gear"
+  "itemgroup.pixelpirates.pixelpirates_gear": "Pixel Pirates Gear",
+
+  "tooltip.pixelpirates.grog_item.tooltip": "Press SHIFT for more info",
+  "tooltip.pixelpirates.grog_item.shifttooltip": "Another one won't hurt",
+  "tooltip.pixelpirates.boarding_axe.tooltip": "Hijack your first ship!"
+
 }
