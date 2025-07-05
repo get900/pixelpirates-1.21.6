@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
@@ -28,6 +29,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.GROG_BARREL);
         addDrop(ModBlocks.DRIFTWOOD_BLOCK, multipleOreDrops(ModBlocks.DRIFTWOOD_BLOCK, ModItems.DRIFTWOOD, 4, 8));
+        addDrop(ModBlocks.BANANA_BLOCK, createSingleItemDrop(ModItems.BANANA));
+        addDrop(ModBlocks.COCONUT_BLOCK, createSingleItemDrop(ModItems.COCONUT));
+        addDrop(ModBlocks.SHOREWOOD_WOOD);
+        addDrop(ModBlocks.SHOREWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_SHOREWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_SHOREWOOD_LOG);
+
 
     }
 
@@ -36,5 +44,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ((LeafEntry.Builder<?>)
                 ItemEntry.builder(item).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops))))
                 .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))));
+    }
+    public LootTable.Builder createSingleItemDrop(Item item) {
+        LootPool.Builder pool = LootPool.builder().rolls(UniformLootNumberProvider.create(1.0f, 1.0f)).with(ItemEntry.builder(item));
+        return LootTable.builder().pool(pool);
     }
 }

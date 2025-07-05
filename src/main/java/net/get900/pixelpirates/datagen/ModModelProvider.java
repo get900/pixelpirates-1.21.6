@@ -23,6 +23,18 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.WATER_LIGHT_BLOCK)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(WaterLightBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
+        blockStateModelGenerator.registerLog(ModBlocks.DRIFTWOOD_BLOCK).log(ModBlocks.DRIFTWOOD_BLOCK);
+
+        //TemperateShallows
+        blockStateModelGenerator.registerLog(ModBlocks.SHOREWOOD_LOG).log(ModBlocks.SHOREWOOD_LOG);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SHOREWOOD_LOG).log(ModBlocks.STRIPPED_SHOREWOOD_LOG);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SHOREWOOD_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SHOREWOOD_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRIPPED_SHOREWOOD_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BANANA_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COCONUT_BLOCK);
+
+
     }
 
     @Override
@@ -49,6 +61,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SAIL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BROKEN_SHOVEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.TATTERED_CLOTH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BANANA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COCONUT, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PIRATE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PIRATE_CHESTPLATE));

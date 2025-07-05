@@ -12,4 +12,6 @@ public class ModFoodComponents {
     public static final FoodComponent RAW_SALTED_SWIMMER = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F)
             .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 200, 0), 0.4f).build();
     public static final FoodComponent COOKED_SALTED_SWIMMER = new FoodComponent.Builder().nutrition(5).saturationModifier(0.3F).build();
+    public static final FoodComponent BANANA = new FoodComponent.Builder().nutrition(2).saturationModifier(0.1F).build();
+    public static final FoodComponent COCONUT = new FoodComponent.Builder().nutrition(2).saturationModifier(0.1F).build();
 }

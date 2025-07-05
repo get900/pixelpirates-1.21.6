@@ -1,0 +1,110 @@
+[
+  {
+    "biome": "pixelpirates:temperate_shallows",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": -0.8,
+      "offset": 0.0
+    }
+  },
+  {
+    "biome": "pixelpirates:open_ocean",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": -0.6,
+      "offset": 0.0
+    }
+  },
+  {
+    "biome": "pixelpirates:open_ocean",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": -0.4,
+      "offset": 0.0
+    }
+  },
+  {
+    "biome": "pixelpirates:volcanic_waters",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": -0.2,
+      "offset": 0.0
+    }
+  },
+  {
+    "biome": "pixelpirates:volcanic_waters",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": 0.0,
+      "offset": 0.0
+    }
+  },
+  {
+    "biome": "pixelpirates:dead_waters",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": 0.2,
+      "offset": 0.0
+    }
+  },
+  {
+    "biome": "pixelpirates:dead_waters",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": 0.4,
+      "offset": 0.0
+    }
+  },
+  {
+    "biome": "pixelpirates:frozen_sea",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": 0.6,
+      "offset": 0.0
+    }
+  },
+  {
+    "biome": "pixelpirates:frozen_sea",
+    "parameters": {
+      "temperature": 0.0,
+      "humidity": 0.0,
+      "continentalness": 0.0,
+      "erosion": 0.0,
+      "depth": 0.0,
+      "weirdness": 0.8,
+      "offset": 0.0
+    }
+  }
+]

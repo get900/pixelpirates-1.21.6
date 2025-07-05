@@ -1,0 +1,72 @@
+{
+  "preset": "pixelpirates:overworld",
+  "temperature_noise": "minecraft:temperature",
+  "humidity_noise": "minecraft:humidity",
+  "continentalness_noise": "minecraft:continentalness",
+  "erosion_noise": "minecraft:erosion",
+  "depth_noise": "minecraft:depth",
+  "weirdness_noise": "minecraft:weirdness",
+  "offset_noise": "minecraft:offset",
+  "biomes": [
+    {
+      "biome": "pixelpirates:temperate_shallows",
+      "parameters": {
+        "temperature": 0.0,
+        "humidity": 0.0,
+        "continentalness": 0.0,
+        "erosion": 0.0,
+        "depth": 0.0,
+        "weirdness": -0.6,
+        "offset": 0.0
+      }
+    },
+    {
+      "biome": "pixelpirates:open_ocean",
+      "parameters": {
+        "temperature": 0.0,
+        "humidity": 0.0,
+        "continentalness": 0.0,
+        "erosion": 0.0,
+        "depth": 0.0,
+        "weirdness": -0.3,
+        "offset": 0.0
+      }
+    },
+    {
+      "biome": "pixelpirates:volcanic_waters",
+      "parameters": {
+        "temperature": 0.0,
+        "humidity": 0.0,
+        "continentalness": 0.0,
+        "erosion": 0.0,
+        "depth": 0.0,
+        "weirdness": 0.0,
+        "offset": 0.0
+      }
+    },
+    {
+      "biome": "pixelpirates:dead_waters",
+      "parameters": {
+        "temperature": 0.0,
+        "humidity": 0.0,
+        "continentalness": 0.0,
+        "erosion": 0.0,
+        "depth": 0.0,
+        "weirdness": 0.3,
+        "offset": 0.0
+      }
+    },
+    {
+      "biome": "pixelpirates:frozen_sea",
+      "parameters": {
+        "temperature": 0.0,
+        "humidity": 0.0,
+        "continentalness": 0.0,
+        "erosion": 0.0,
+        "depth": 0.0,
+        "weirdness": 0.6,
+        "offset": 0.0
+      }
+    }
+  ]
+}

@@ -1,34 +1,25 @@
 package net.get900.pixelpirates.item;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.get900.pixelpirates.PixelPirates;
-//import net.get900.pixelpirates.block.ModBlocks;
-//import net.get900.pixelpirates.item.custom.GrogItem;
-//import net.get900.pixelpirates.item.custom.RaftItem;
-//import net.get900.pixelpirates.item.custom.ShipItem;
+import net.get900.pixelpirates.item.custom.DynamiteItem;
 import net.get900.pixelpirates.item.custom.GrogItem;
 import net.get900.pixelpirates.item.custom.ModArmorItem;
+import net.get900.pixelpirates.item.custom.RaftItem;
 import net.get900.pixelpirates.util.ModTags;
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.FoodComponent;
 import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
-import java.util.function.Function;
 
 public class ModItems {
     public static final Item COIN = registerItem("coin", new Item(new Item.Settings()));
     public static final Item PIRATE_COIN = registerItem("pirate_coin", new Item(new Item.Settings()));
     public static final Item KRAKEN_INK = registerItem("kraken_ink", new Item(new Item.Settings()));
-    public static final Item DYNAMITE = registerItem("dynamite", new Item(new Item.Settings()));
     public static final Item ROPE = registerItem("rope", new Item(new Item.Settings()));
     public static final Item CANNON = registerItem("cannon", new Item(new Item.Settings()));
     public static final Item SAIL = registerItem("sail", new Item(new Item.Settings()));
@@ -43,6 +34,9 @@ public class ModItems {
             return stack.isIn(ModTags.Items.SHOOTABLE_ITEMS);
         }
     });
+    public static final Item RAFT_ITEM = Registry.register(Registries.ITEM, Identifier.of(PixelPirates.MOD_ID, "raft_item"),
+            new RaftItem(new Item.Settings().maxCount(1))
+    );
 
    // public static final Item SHIP_ITEM = Registry.register(Registries.ITEM, Identifier.of(PixelPirates.MOD_ID, "ship_item"),
      //       new ShipItem(new Item.Settings().maxCount(1)));
@@ -56,6 +50,10 @@ public class ModItems {
     public static final Item RAW_SHARK_MEAT = registerItem("raw_shark_meat", new Item(new Item.Settings().food(ModFoodComponents.RAW_SHARK_MEAT)));
     public static final Item RAW_SALTED_SWIMMER = registerItem("raw_salted_swimmer", new Item(new Item.Settings().food(ModFoodComponents.RAW_SALTED_SWIMMER)));
     public static final Item COOKED_SALTED_SWIMMER = registerItem("cooked_salted_swimmer", new Item(new Item.Settings().food(ModFoodComponents.COOKED_SALTED_SWIMMER)));
+    public static final Item BANANA = registerItem("banana", new Item(new Item.Settings().food(ModFoodComponents.BANANA)));
+    public static final Item COCONUT = registerItem("coconut", new Item(new Item.Settings().food(ModFoodComponents.COCONUT)));
+
+    //Temperate Shallows Blocks
 
     //Fuel items
 
@@ -92,6 +90,8 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
+    public static final Item DYNAMITE = registerItem("dynamite",
+            new DynamiteItem(new Item.Settings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(PixelPirates.MOD_ID, name), item);
@@ -99,38 +99,6 @@ public class ModItems {
 
     public static void registerModItems() {
         PixelPirates.LOGGER.info("Registering Mod Items for " + PixelPirates.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(COIN);
-            entries.add(PIRATE_COIN);
-            entries.add(CUTLASS);
-            entries.add(DAGGER);
-            entries.add(DYNAMITE);
-            entries.add(CANNON_BALL);
-           // entries.add(SHIP_ITEM);
-           // entries.add(RAFT_ITEM);
-            //entries.add(PIRATE_HAT);
-            entries.add(ROPE);
-          //  entries.add(RAW_SHARK_MEAT);
-            entries.add(KRAKEN_INK);
-            entries.add(CANNON);
-            entries.add(SAIL);
-            entries.add(MAST_WITH_SAILS);
-            entries.add(MAST);
-          //  entries.add(COOKED_SHARK_MEAT);
-            entries.add(DRIFTWOOD);
-
-           // entries.add(ModBlocks.GUNPOWDER_BARREL);
-           // entries.add(ModBlocks.GROG_BARREL);
-           // entries.add(ModBlocks.DRIFTWOOD_BLOCK);
-
-            //Special items
-
-            //Food items
-           // entries.add(GROG);
-            //Fuel items
-
-            //Tool items
-        });
+        }
     }
-}
+

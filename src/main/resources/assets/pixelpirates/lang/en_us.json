@@ -42,6 +42,11 @@
 
   "tooltip.pixelpirates.grog_item.tooltip": "Press SHIFT for more info",
   "tooltip.pixelpirates.grog_item.shifttooltip": "Another one won't hurt",
-  "tooltip.pixelpirates.boarding_axe.tooltip": "Hijack your first ship!"
+  "tooltip.pixelpirates.boarding_axe.tooltip": "Hijack your first ship!",
+
+  "world_preset.pixelpirates.pixel_pirates": "Pixel Pirates",
+  "worldgen.preset.pixelpirates.pixel_pirates": "Pixel Pirates",
+
+  "generator.pixelpirates.pixel_pirates.info": "A pirate-themed overworld!"
 
 }

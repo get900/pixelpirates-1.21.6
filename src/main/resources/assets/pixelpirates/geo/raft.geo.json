@@ -1,0 +1,120 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.raft",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 2.75, 0]
+			},
+			"bones": [
+				{
+					"name": "raft_base",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 0, -56], "size": [4, 3, 112], "uv": [0, 0]},
+						{"origin": [-9, 0, -56], "size": [4, 3, 112], "uv": [0, 115]},
+						{"origin": [-15, 0, -56], "size": [4, 3, 112], "uv": [0, 230]},
+						{"origin": [-21, 0, -56], "size": [4, 3, 112], "uv": [232, 0]},
+						{"origin": [-27, 0, -56], "size": [4, 3, 112], "uv": [232, 115]},
+						{"origin": [9, 0, -56], "size": [4, 3, 112], "uv": [232, 230]},
+						{"origin": [15, 0, -56], "size": [4, 3, 112], "uv": [0, 345]},
+						{"origin": [21, 0, -56], "size": [4, 3, 112], "uv": [232, 345]},
+						{"origin": [27, 0, -56], "size": [4, 3, 112], "uv": [0, 460]},
+						{"origin": [39, 0, -56], "size": [4, 3, 112], "uv": [464, 115]},
+						{"origin": [33, 0, -56], "size": [4, 3, 112], "uv": [464, 230]},
+						{"origin": [3, 0, -56], "size": [4, 3, 112], "uv": [232, 460]},
+						{"origin": [-33, 0, -56], "size": [4, 3, 112], "uv": [464, 0]},
+						{"origin": [-45, 0, -56], "size": [4, 3, 112], "uv": [464, 345]},
+						{"origin": [-39, 0, -56], "size": [4, 3, 112], "uv": [464, 460]},
+						{"origin": [19, -1, -71], "size": [4, 3, 90], "pivot": [22, -1, -49], "rotation": [0, -90, 0], "uv": [0, 575]},
+						{"origin": [19, -1, -11], "size": [4, 3, 90], "pivot": [22, -1, 11], "rotation": [0, -90, 0], "uv": [188, 575]},
+						{"origin": [19, -1, -47], "size": [4, 3, 90], "pivot": [22, -1, -25], "rotation": [0, -90, 0], "uv": [376, 575]},
+						{"origin": [19, -1, 29], "size": [4, 3, 90], "pivot": [22, -1, 51], "rotation": [0, -90, 0], "uv": [564, 575]}
+					]
+				},
+				{
+					"name": "mast",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 0, -32], "size": [10, 7, 12], "uv": [200, 668]},
+						{"origin": [-4, 7, -29], "size": [6, 75, 6], "uv": [0, 668]},
+						{"origin": [-39, 82, -28], "size": [4, 75, 4], "pivot": [-37, 84, -27], "rotation": [0, 0, 90], "uv": [24, 668]},
+						{"origin": [-39, 25, -31], "size": [4, 75, 4], "pivot": [-37, 27, -30], "rotation": [0, 0, 90], "uv": [166, 668]}
+					]
+				},
+				{
+					"name": "sail",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "sail_part_1",
+					"parent": "sail",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-38, 82, -30], "size": [7, 75, 2], "pivot": [-37, 84, -31], "rotation": [0, 0, 90], "uv": [40, 668]}
+					]
+				},
+				{
+					"name": "sail_part_2",
+					"parent": "sail",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-38, 75, -31], "size": [7, 75, 2], "pivot": [-37, 77, -32], "rotation": [0, 0, 90], "uv": [182, 668]}
+					]
+				},
+				{
+					"name": "sail_part_3",
+					"parent": "sail",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-38, 68, -31], "size": [7, 75, 2], "pivot": [-37, 70, -32], "rotation": [0, 0, 90], "uv": [58, 668]}
+					]
+				},
+				{
+					"name": "sail_part_4",
+					"parent": "sail",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-38, 61, -31], "size": [7, 75, 2], "pivot": [-37, 63, -32], "rotation": [0, 0, 90], "uv": [76, 668]}
+					]
+				},
+				{
+					"name": "sail_part_5",
+					"parent": "sail",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-38, 54, -31], "size": [7, 75, 2], "pivot": [-37, 56, -32], "rotation": [0, 0, 90], "uv": [94, 668]}
+					]
+				},
+				{
+					"name": "sail_part_6",
+					"parent": "sail",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-38, 47, -31], "size": [7, 75, 2], "pivot": [-37, 49, -32], "rotation": [0, 0, 90], "uv": [112, 668]}
+					]
+				},
+				{
+					"name": "sail_part_7",
+					"parent": "sail",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-38, 40, -31], "size": [7, 75, 2], "pivot": [-37, 42, -32], "rotation": [0, 0, 90], "uv": [130, 668]}
+					]
+				},
+				{
+					"name": "sail_part_8",
+					"parent": "sail",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-38, 33, -31], "size": [7, 75, 2], "pivot": [-37, 35, -32], "rotation": [0, 0, 90], "uv": [148, 668]}
+					]
+				}
+			]
+		}
+	]
+}

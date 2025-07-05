@@ -24,7 +24,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DYNAMITE);
                         entries.add(ModItems.CANNON_BALL);
                   //      entries.add(ModItems.SHIP_ITEM);
-                  //      entries.add(ModItems.RAFT_ITEM);
+                        entries.add(ModItems.RAFT_ITEM);
                         //entries.add(ModItems.PIRATE_HAT);
                         entries.add(ModItems.ROPE);
                         entries.add(ModItems.KRAKEN_INK);
@@ -46,6 +46,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GROG_BARREL);
                         entries.add(ModBlocks.DRIFTWOOD_BLOCK);
                         entries.add(ModBlocks.WATER_LIGHT_BLOCK);
+                        entries.add(ModBlocks.SHOREWOOD_LOG);
+                        entries.add(ModBlocks.SHOREWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_SHOREWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_SHOREWOOD_WOOD);
+                        entries.add(ModBlocks.SHOREWOOD_LEAVES);
+                        entries.add(ModBlocks.COCONUT_BLOCK);
+                        entries.add(ModBlocks.BANANA_BLOCK);
 
                     }).build());
 
@@ -60,6 +67,8 @@ public class ModItemGroups {
                         entries.add(ModItems.COOKED_SHARK_MEAT);
                         entries.add(ModItems.RAW_SALTED_SWIMMER);
                         entries.add(ModItems.COOKED_SALTED_SWIMMER);
+                        entries.add(ModItems.COCONUT);
+                        entries.add(ModItems.BANANA);
 
                     }).build());
 
