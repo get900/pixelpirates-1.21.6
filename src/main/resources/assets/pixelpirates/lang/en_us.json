@@ -44,8 +44,7 @@
   "tooltip.pixelpirates.grog_item.shifttooltip": "Another one won't hurt",
   "tooltip.pixelpirates.boarding_axe.tooltip": "Hijack your first ship!",
 
-  "world_preset.pixelpirates.pixel_pirates": "Pixel Pirates",
-  "worldgen.preset.pixelpirates.pixel_pirates": "Pixel Pirates",
+  "data.pixelpirates.world.title": "Pixel Pirates",
 
   "generator.pixelpirates.pixel_pirates.info": "A pirate-themed overworld!"
 

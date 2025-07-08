@@ -5,6 +5,7 @@ import net.get900.pixelpirates.PixelPirates;
 import net.get900.pixelpirates.entity.custom.DynamiteEntity;
 import net.get900.pixelpirates.entity.custom.RaftEntity;
 import net.get900.pixelpirates.entity.custom.SharkEntity;
+import net.get900.pixelpirates.entity.custom.SloopEntity;
 import net.minecraft.entity.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -31,6 +32,16 @@ public class ModEntities {
                     .build()
     );
 
+    public static final EntityType<SloopEntity> SLOOP = Registry.register(
+            Registries.ENTITY_TYPE,
+            Identifier.of(PixelPirates.MOD_ID, "sloop"),
+            FabricEntityTypeBuilder.<SloopEntity>create(SpawnGroup.MISC, SloopEntity::new)
+                    .dimensions(EntityDimensions.fixed(14.0f, 7.0f)) // Adjust to fit your sloop model
+                    .trackRangeBlocks(80)
+                    .trackedUpdateRate(1)
+                    .build()
+    );
+
     public static final EntityType<DynamiteEntity> DYNAMITE = Registry.register(
             Registries.ENTITY_TYPE,
             Identifier.of(PixelPirates.MOD_ID, "dynamite"),
@@ -40,16 +51,6 @@ public class ModEntities {
                     .trackedUpdateRate(10)
                     .build()
     );
-
-    public static void registerSpawns() {
-        SpawnRestriction.register(
-                ModEntities.SHARK,
-                SpawnLocationTypes.IN_WATER,
-                Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-                SharkEntity::canSpawn
-        );
-
-    }
 
     public static void registerModEntities() {
         PixelPirates.LOGGER.info("Registering ModEntities for " + PixelPirates.MOD_ID);

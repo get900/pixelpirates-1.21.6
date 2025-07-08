@@ -24,6 +24,7 @@ repositories {
 		}
 	}
 	maven { url "https://maven.fabricmc.net/" }
+	maven { url = 'https://maven.minecraftforge.net/' }
 	mavenCentral()
 }
 
@@ -45,6 +46,9 @@ dependencies {
 	// GeckoLib (runtime + annotation processor)
 	modImplementation "software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}"
 	annotationProcessor "software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}"
+
+	//TerraBlender
+	modImplementation 'com.github.glitchfiend:TerraBlender-fabric:1.21.1-4.1.0.8'
 	
 }
 

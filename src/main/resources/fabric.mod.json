@@ -23,8 +23,12 @@
 		],
 		"client": [
 			"net.get900.pixelpirates.PixelPiratesClient"
+		],
+		"terrablender": [
+			"net.get900.pixelpirates.world.biome.ModTerrablenderAPI"
 		]
 	},
+	"custom_worldgen": true,
 	"data_pack": {
 		"enabled": true
 	},

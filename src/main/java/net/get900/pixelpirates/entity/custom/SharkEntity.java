@@ -16,6 +16,7 @@ import net.minecraft.entity.ai.pathing.EntityNavigation;
 import net.minecraft.entity.ai.pathing.SwimNavigation;
 import net.minecraft.entity.ai.pathing.PathNodeType;
 import net.minecraft.fluid.Fluids;
+import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -198,7 +199,5 @@ public class SharkEntity extends PathAwareEntity implements GeoEntity {
         return 0.25f;
     }
 
-    public static boolean canSpawn(EntityType<SharkEntity> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random) {
-        return world.getFluidState(pos).isOf(Fluids.WATER);
-    }
 }
+

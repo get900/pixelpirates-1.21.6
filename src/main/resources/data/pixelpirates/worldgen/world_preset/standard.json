@@ -1,15 +1,14 @@
 {
   "dimensions": {
     "minecraft:overworld": {
-      "type": "pixelpirates:overworld_type",
+      "type": "minecraft:overworld",
       "generator": {
         "type": "minecraft:noise",
         "biome_source": {
           "type": "minecraft:multi_noise",
-          "preset": "pixelpirates:overworld",
-          "large_biomes": false
+          "preset": "pixelpirates:overworld"
         },
-        "settings": "minecraft:overworld"
+        "settings": "pixelpirates:pixel_pirates_shallows"
       }
     }
   }

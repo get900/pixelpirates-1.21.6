@@ -40,13 +40,8 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
                 new TwoLayersFeatureSize(1, 0, 1)
         )
-                .decorators(List.of(
-                        new BananaTreeDecorator(0.2f),
-                        new CoconutTreeDecorator(0.1f),
-                        new BeehiveTreeDecorator(0.05f)
-                ))
-                .ignoreVines()
-                .build();
+                .decorators(List.of(new BananaTreeDecorator(0.2f), new CoconutTreeDecorator(0.1f), new BeehiveTreeDecorator(0.05f)))
+                .ignoreVines().build();
 
         ConfiguredFeature<?, ?> shorewoodTreeFeature = new ConfiguredFeature<>(Feature.TREE, shorewoodTreeConfig);
 

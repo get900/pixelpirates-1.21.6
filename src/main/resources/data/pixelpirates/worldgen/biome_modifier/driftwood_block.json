@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:add_features",
-  "features": [
-    "pixelpirates:driftwood_block_placed"
-  ],
-  "step": "local_modifications",
-  "biomes": "#minecraft:is_beach"
-}

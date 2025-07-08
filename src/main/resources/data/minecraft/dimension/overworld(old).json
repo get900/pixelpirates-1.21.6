@@ -1,5 +1,5 @@
 {
-  "type": "pixelpirates:overworld_type",
+  "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
     "biome_source": {
@@ -7,6 +7,7 @@
       "preset": "pixelpirates:overworld",
       "large_biomes": false
     },
-    "settings": "minecraft:overworld"
+    "settings": "pixelpirates:pixel_pirates_shallows"
   }
 }
+
